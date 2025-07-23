@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Market | Responsive with Tailwind</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+            --font-primary: 'Noto Serif', serif /* Primary font for headings */;
+            --font-secondary: 'Inter', sans-serif /* Secondary font for body text */;  
+            --color-primary: #E95A08 /* Primary color for buttons and links */;
+            --color-secondary: rgba(0, 0, 0, 0.5) /* Secondary color for text */;
+          }
+        </style>
+</head>
+
+<body class="bg-[#f5f8ff] font-secondary text-secondary">
+  <!-- Header Section -->
+  <header class="container mx-auto">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 ">
+      <div class="w-24 ">
+        <img src="./assets/logo.png" alt="Logo">
+      </div>
+      <div class="flex gap-12">
+        <ul class="list-none hidden md:flex gap-12">
+          <li class="text-black font-bold"><a href="#">Home</a></li>
+          <li class="hover:text-black hover:font-bold transition"><a href="#">Shop</a></li>
+          <li class="hover:text-black hover:font-bold transition"><a href="#">About us</a></li>
+        </ul>
+        <button class="text-black text-xl hover:text-primary transition"><i class="fa-solid fa-cart-shopping"></i> Cart
+          ($56)</button>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <section class="flex flex-col-reverse md:flex-row justify-between items-center gap-6 py-30">
+      <div class="flex-1/2 p-4 md:p-0 space-y-6">
+        <h1 class="text-5xl md:text-6xl font-bold font-primary text-black leading-18">ALWAYS <span
+            class="text-primary">FRESH
+            FLOWERS</span></h1>
+        <p> Bringing you handpicked, freshly bloomed flowers every day — carefully selected to brighten your day,
+          express your love, celebrate life's special moments, and add a touch of natural beauty to any space.</p>
+      </div>
+      <div class="flex-1/2">
+        <img src="./assets/hero-flower.png" alt="Hero Flower" class="w-full h-auto">
+      </div>
+    </section>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+
+  </footer>
+</body>
+
+</html>
